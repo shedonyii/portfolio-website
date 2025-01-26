@@ -279,3 +279,38 @@ footer .socials a:hover {
 .icon.youtube:hover {
   color: #ff0000;
 }
+
+
+/* General styles for larger screens remain the same */
+
+/* Add media queries for mobile devices */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column; /* Stack content vertically */
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-content {
+    padding: 10px; /* Reduce padding for smaller screens */
+  }
+
+  .hero-image img {
+    width: 80%; /* Scale down image size for mobile */
+    max-width: 300px;
+    margin-bottom: 20px; /* Add space below the image */
+  }
+
+  h1 {
+    font-size: 1.5rem; /* Adjust font size for headers */
+  }
+
+  p {
+    font-size: 1rem; /* Adjust paragraph font size */
+  }
+
+  .btn {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+  }
+}
